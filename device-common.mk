@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     librilutils \
     rild
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
 # append the updater uri to the product properties if set
 ifneq ($(CM_UPDATER_OTA_URI),)
     PRODUCT_PROPERTY_OVERRIDES += $(CM_UPDATER_OTA_URI)
